@@ -3,7 +3,7 @@ function analyzeRepository() {
     var formData = new FormData();
     formData.append('repo_url', repoUrl);
 
-    fetch('http://127.0.0.1:8000/analyze', {
+    fetch('https://code-analysis-tool.onrender.com/analyze', {
         method: 'POST',
         body: formData
     })
