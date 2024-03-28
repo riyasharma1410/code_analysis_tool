@@ -5,7 +5,11 @@ function analyzeRepository() {
 
     fetch('https://code-analysis-tool.onrender.com/analyze', {
         method: 'POST',
-        body: formData
+        body: formData,
+        mode: 'cors', // Include CORS mode
+        headers: {
+            'Access-Control-Allow-Origin': '*', // Adjust the allowed origin based on your server configuration
+        }
     })
     .then(response => response.json())
     .then(data => {

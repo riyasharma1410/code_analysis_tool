@@ -9,7 +9,7 @@ import importlib.metadata
 import importlib.resources
 
 app = Flask(__name__)
-CORS(app, origins=['https://code-analysis-tool-1.onrender.com/'])
+CORS(app, resources={r"/analyze": {"origins": "https://code-analysis-tool-1.onrender.com"}})
 
 def get_repository_dependencies(repo_url):
     match = re.match(r'https://github.com/([^/]+)/([^/]+)', repo_url)
