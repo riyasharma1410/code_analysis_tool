@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Analysis Tool</h1>
+        <div>
+            <label for="repoUrl">GitHub Repository URL:</label>
+            <input type="text" id="repoUrl">
+            <button onclick="analyzeRepository()">Analyze</button>
+        </div>
+        <div id="results"></div>
+        <div id="vulnerabilityBar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
