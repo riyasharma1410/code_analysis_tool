@@ -36,4 +36,4 @@ function displayResults(data) {
     } else if (data.message !== undefined) {
         resultsDiv.innerHTML = "<p>" + data.message + "</p>";
     }
-}
+} 
